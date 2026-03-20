@@ -5,9 +5,13 @@ export default function AppHeader() {
 
     return (
         <header>
-            {menu.map(navItem => (
-                <NavLink key={navItem.id} to={navItem.path}>{navItem.text}</NavLink>
-            ))}
+            <div className="container">
+                <nav className="d-flex justify-content-center my-3">
+                    {menu.map(navItem => (
+                        <NavLink key={navItem.id} to={navItem.path} className=" text-decoration-none px-3 text-black" id="nav-item">{navItem.text}</NavLink>
+                    ))}
+                </nav>
+            </div>
         </header>
     )
 }
