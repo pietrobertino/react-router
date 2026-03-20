@@ -10,7 +10,7 @@ const menu = [
         text: "Chi siamo"
     },
     {
-        id: 1,
+        id: 3,
         path: "/prodotti",
         text: "Prodotti"
     }

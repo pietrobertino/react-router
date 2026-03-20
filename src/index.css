@@ -18,3 +18,19 @@ header {
 
   }
 }
+
+.card-subtitle {
+  text-align: end;
+  opacity: 80%;
+}
+
+.card-img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: contain;
+  object-position: center;
+}
+
+.card-footer {
+  text-align: end;
+}
