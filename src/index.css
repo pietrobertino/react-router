@@ -5,6 +5,16 @@
   --navbar-active: purple;
 }
 
+#layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 header {
 
   #nav-item {
@@ -29,8 +39,4 @@ header {
   aspect-ratio: 4/5;
   object-fit: contain;
   object-position: center;
-}
-
-.card-footer {
-  text-align: end;
 }

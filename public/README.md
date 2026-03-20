@@ -18,3 +18,7 @@ Bonus
 
 Centralizziamo la Navbar usando un componente Layout
 Gestiamo la classe active per i link attivi nella Navbar
+
+Super Bonus:
+Aggiungere alle card la funzionalità di visualizzare la descrizione quando premute.
+Aggiungere al footer i link alle diverse pagine del sito usando il tag Link.

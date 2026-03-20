@@ -4,16 +4,17 @@ const menu = [
         path: "/",
         text: "Home"
     },
+
     {
         id: 2,
-        path: "/chi-siamo",
-        text: "Chi siamo"
+        path: "/prodotti",
+        text: "Prodotti"
     },
     {
         id: 3,
-        path: "/prodotti",
-        text: "Prodotti"
-    }
+        path: "/chi-siamo",
+        text: "Chi siamo"
+    },
 ]
 
 export default menu

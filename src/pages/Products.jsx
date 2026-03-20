@@ -17,35 +17,35 @@ export default function Products() {
     }, [])
 
     return (
-        <main>
-            <div className="container">
-                <h1>
-                    I nostri prodotti
-                </h1>
 
-                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
-                    {products.map(product => (
-                        <div className='col' key={product.id}>
-                            <div className="card p-3 h-100">
+        <div className="container">
+            <h1 className='my-5'>
+                I nostri prodotti
+            </h1>
 
-                                <div className=' card-header '>
-                                    <div className='card-subtitle'>{product.category}</div>
-                                    <img src={product.image} alt={product.title} className=' card-img p-3' />
-                                </div>
+            <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+                {products.map(product => (
+                    <div className='col' key={product.id}>
+                        <div className="card p-3 h-100">
 
-                                <div className='card-body d-flex flex-column'>
-                                    <h3 className='card-title'>{product.title}</h3>
-                                    {/* <p className='card-text'>{product.description}</p> */}
-                                    <div className='card-footer mt-auto'>
-                                        <div className=' fw-bolder'>&pound;{product.price}</div>
-                                    </div>
-                                </div>
-
+                            <div className=' card-header '>
+                                <div className='card-subtitle'>{product.category}</div>
+                                <img src={product.image} alt={product.title} className=' card-img p-3' />
                             </div>
+
+                            <div className='card-body d-flex flex-column'>
+                                <h3 className='card-title'>{product.title}</h3>
+                                {/* <p className='card-text'>{product.description}</p> */}
+                                <div className='card-footer mt-auto'>
+                                    <div className=' fw-bolder'>&pound;{product.price}</div>
+                                </div>
+                            </div>
+
                         </div>
-                    ))}
-                </div>
+                    </div>
+                ))}
             </div>
-        </main>
+        </div>
+
     )
 }
