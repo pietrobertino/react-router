@@ -1,13 +1,20 @@
 @import url("bootstrap");
 
 :root {
-  --navbar-border: rgba(0, 0, 0, 0.16);
+  --navbar-border: rgba(0, 0, 0, 0.357);
+  --navbar-active: purple;
 }
 
 header {
 
   #nav-item {
+    color: black;
     border-left: 1px solid var(--navbar-border);
     border-right: 1px solid var(--navbar-border);
+
+    &.active {
+      color: var(--navbar-active);
+    }
+
   }
 }

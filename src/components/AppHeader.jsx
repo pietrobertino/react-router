@@ -8,7 +8,7 @@ export default function AppHeader() {
             <div className="container">
                 <nav className="d-flex justify-content-center my-3">
                     {menu.map(navItem => (
-                        <NavLink key={navItem.id} to={navItem.path} className=" text-decoration-none px-3 text-black" id="nav-item">{navItem.text}</NavLink>
+                        <NavLink key={navItem.id} to={navItem.path} className=" text-decoration-none px-3" id="nav-item">{navItem.text}</NavLink>
                     ))}
                 </nav>
             </div>
