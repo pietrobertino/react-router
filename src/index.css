@@ -1,5 +1,7 @@
 @import url("bootstrap");
 
+@import url("bootstrap-icons");
+
 :root {
   --navbar-border: rgba(0, 0, 0, 0.357);
   --navbar-active: purple;
@@ -39,4 +41,8 @@ header {
   aspect-ratio: 4/5;
   object-fit: contain;
   object-position: center;
+}
+
+.product-img {
+  max-width: 100%;
 }

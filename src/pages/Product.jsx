@@ -14,25 +14,31 @@ export default function Product() {
             .then(res =>
                 setProductInfo(res.data)
             )
-    }, [])
+    }, [id])
 
     return (
         <>
             <div className="container">
                 <h1 className="py-3">{productInfo.title}</h1>
-                <div className="row mt-3">
+                <div className="row mt-3 g-3">
                     <div className="col col-12 col-md-7 text-center">
-                        <img src={productInfo.image} alt={productInfo.title} className="w-100" /> {/*capire come mettere tutte le immagini nel modo giusto*/}
+                        <img src={productInfo.image} alt={productInfo.title} className="product-img" />
                     </div>
 
-                    <div className="col col-12 col-md-5">
-                        <div>{productInfo.category}</div>
-                        <span>{productInfo.rating?.rate}</span>
-                        <span>{productInfo.rating?.count}</span>
+                    <div className="col col-12 col-md-5 p-3">
+                        <div className="d-flex justify-content-between">
+                            <span className="opacity-75">{productInfo.category}</span>
+                            <div>
+                                <span>{productInfo.rating?.rate} <i className="bi bi-star"></i></span>
+                                <span className="ms-2">{productInfo.rating?.count} reviews</span>
+                            </div>
+                        </div>
+                        <div className="my-3 fw-bold">{productInfo.title}</div>
                         <p>{productInfo.description}</p>
+                        <div className="fw-bold">&pound;{productInfo.price}</div>
                     </div>
                 </div>
             </div>
         </>
     )
-}
+}   
