@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 const api_url = "https://fakestoreapi.com/products"
+import { Link } from 'react-router-dom'
 
 export default function Products() {
 
@@ -35,7 +36,7 @@ export default function Products() {
 
                             <div className='card-body d-flex flex-column'>
                                 <h3 className='card-title'>{product.title}</h3>
-                                {/* <p className='card-text'>{product.description}</p> */}
+                                <Link to={`/prodotti/${product.id}`}>Find out more</Link>
                                 <div className='card-footer mt-auto'>
                                     <div className=' fw-bolder'>&pound;{product.price}</div>
                                 </div>
@@ -45,7 +46,7 @@ export default function Products() {
                     </div>
                 ))}
             </div>
-        </div>
+        </div >
 
     )
 }
