@@ -47,6 +47,7 @@ header {
   max-width: 100%;
 }
 
-#error-page {
+#error-page,
+#loading-screen {
   min-height: 80vh;
 }
