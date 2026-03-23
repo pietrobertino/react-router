@@ -35,7 +35,14 @@ export default function Product() {
                         </div>
                         <div className="my-3 fw-bold">{productInfo.title}</div>
                         <p>{productInfo.description}</p>
-                        <div className="fw-bold">&pound;{productInfo.price}</div>
+                        <div className="d-flex justify-content-between align-items-center">
+                            <div className="fw-bold">&pound;{productInfo.price}</div>
+                            <div>
+                                <button className="btn btn-success text-white btn-sm me-2">Buy now</button>
+                                <button className="btn btn-primary btn-sm"><i className="bi bi-cart"></i></button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
