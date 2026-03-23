@@ -6,7 +6,7 @@ export default function NotFoundPage() {
         <div className="container d-flex justify-content-center align-items-center " id="error-page">
             <div>
                 <h1>404 Not Found</h1>
-                <Link to="/">Go back</Link>
+                <Link to="/prodotti">Go back</Link>
             </div>
         </div>
 

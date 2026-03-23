@@ -19,11 +19,6 @@ Bonus
 Centralizziamo la Navbar usando un componente Layout
 Gestiamo la classe active per i link attivi nella Navbar
 
-Super Bonus:
-Aggiungere alle card la funzionalità di visualizzare la descrizione quando premute.
-Aggiungere al footer i link alle diverse pagine del sito usando il tag Link.
-
-
 Consegna
 
 Completiamo il nostro routing aggiungendo la pagina di dettaglio prodotto!
@@ -43,3 +38,7 @@ Aggiungiamo un loading per caricamento del dettaglio prodotto.
 Super Bonus
 
 Aggiungiamo nella pagina di dettaglio dei pulsanti per navigare al prodotto precedente o successivo (usando useNavigate() programmaticamente)
+
+
+Bonus personali:
+Resettare lo scroll al cambio di pagina

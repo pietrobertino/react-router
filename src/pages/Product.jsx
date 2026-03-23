@@ -24,6 +24,7 @@ export default function Product() {
 
     }, [id, navigate])
 
+
     return (
         <>
             {
@@ -53,6 +54,10 @@ export default function Product() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div className="d-flex align-items-center justify-content-center p-5 mt-3 gap-3">
+                            {id != 1 && <button className="btn btn-dark btn-lg" onClick={() => navigate(`/prodotti/${Number(id) - 1}`)}><i className="bi bi-arrow-left"></i></button>}
+                            <button className="btn btn-dark btn-lg" onClick={() => navigate(`/prodotti/${Number(id) + 1}`)}><i className="bi bi-arrow-right"></i></button>
                         </div>
                     </div>
                     :
