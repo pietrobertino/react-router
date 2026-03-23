@@ -1,20 +1,27 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import axios from 'axios'
-
+const api_url = "https://fakestoreapi.com/products"
 
 
 export default function Product() {
 
     const { id } = useParams()
     const [productInfo, setProductInfo] = useState({})
+    const navigate = useNavigate()
+
 
     useEffect(() => {
-        axios.get(`https://fakestoreapi.com/products/${id}`)
-            .then(res =>
-                setProductInfo(res.data)
-            )
-    }, [id])
+        axios.get(`${api_url}/${id}`)
+            .then(res => {
+                if (res.data) {
+                    setProductInfo(res.data)
+                } else {
+                    navigate(-1)
+                }
+            })
+
+    }, [id, navigate])
 
     return (
         <>
