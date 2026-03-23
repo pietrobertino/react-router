@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import Info from "./pages/Info"
 import Products from "./pages/Products"
 import Product from "./pages/Product"
+import NotFoundPage from "./pages/NotFoundPage"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
             <Route path="/chi-siamo" element={<Info />} />
             <Route path="/prodotti" element={<Products />} />
             <Route path="/prodotti/:id" element={<Product />} />
+            <Route path="/404-not-found" element={<NotFoundPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

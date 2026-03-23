@@ -17,7 +17,7 @@ export default function Product() {
                 if (res.data) {
                     setProductInfo(res.data)
                 } else {
-                    navigate(-1)
+                    navigate("/404-not-found")
                 }
             })
 
